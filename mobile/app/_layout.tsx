@@ -3,7 +3,7 @@ import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
-import config from '@/ui/token';
+import config from '@/components/ui/token';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { TamaguiProvider } from 'tamagui';
