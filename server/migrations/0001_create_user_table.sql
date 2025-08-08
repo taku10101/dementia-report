@@ -1,0 +1,6 @@
+-- CreateTable
+CREATE TABLE User (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT NOT NULL,
+    name TEXT NOT NULL
+);

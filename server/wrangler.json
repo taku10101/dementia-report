@@ -1,0 +1,9 @@
+{
+    "d1_databases": [
+      {
+        "binding": "DB",
+        "database_name": "dementia-report",
+        "database_id": "81c8a3d1-1dc3-434d-bd64-6d091fc29a76"
+      }
+    ]
+  }
