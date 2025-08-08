@@ -1,0 +1,20 @@
+{
+	"mcpServers": {
+		"cloudflare": {
+			"command": "npx",
+			"args": ["mcp-remote", "https://docs.mcp.cloudflare.com/sse"]
+		},
+        "postgres": {
+            "command": "npx",
+            "args": [
+              "-y",
+              "@modelcontextprotocol/server-postgres",
+              "postgresql://test:test@localhost:15432/test"
+            ]
+          },
+          "Prisma-Remote": {
+            "command": "npx",
+            "args": ["-y", "mcp-remote", "https://mcp.prisma.io/mcp"]
+          }
+	}
+}
