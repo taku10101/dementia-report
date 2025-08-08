@@ -11,10 +11,6 @@
               "@modelcontextprotocol/server-postgres",
               "postgresql://test:test@localhost:15432/test"
             ]
-          },
-          "Prisma-Remote": {
-            "command": "npx",
-            "args": ["-y", "mcp-remote", "https://mcp.prisma.io/mcp"]
           }
 	}
 }
