@@ -5,12 +5,9 @@ import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 import config from '@/components/ui/token';
 
-import { useColorScheme } from '@/hooks/useColorScheme';
 import { TamaguiProvider } from 'tamagui';
 
-
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
   });

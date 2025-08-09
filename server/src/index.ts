@@ -14,6 +14,14 @@ const app = new Hono<{
 }>()
 
 app.post('/', async (c) => {
-  // Now you can use it wherever you want
   const prisma = getPrisma(c.env.DATABASE_URL)
+  // 簡易バリデーション例
+  const { name, email } = await c.req.json()
+  const user = await prisma.user.create({ data: { name, email } })
+  return c.json(user, 201)
 })
+
+// ヘルスチェック
+app.get('/health', (c) => c.text('ok'))
+
+export default app
